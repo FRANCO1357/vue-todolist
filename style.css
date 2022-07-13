@@ -38,6 +38,11 @@ li{
     margin: 0.5rem 0;
 }
 
+li .task{
+    display: flex;
+    align-items: center;
+}
+
 .done i{
     border: 1px solid black;
     border-radius: 50%;
@@ -52,6 +57,14 @@ li{
 button{
     padding: 0.5rem;
     margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+#list button{
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: red;
 }
 
 .new-task{
