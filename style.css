@@ -14,9 +14,12 @@ h1{
     margin: 2rem;
 }
 
-.list-container{
+#list-container{
+    width: 600px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 ul{
@@ -24,6 +27,7 @@ ul{
     border: 0.5px solid black;
     border-radius: 5px;
     padding: 1rem;
+    margin: 1rem;
 }
 
 li{
@@ -48,4 +52,13 @@ li{
 button{
     padding: 0.5rem;
     margin-right: 0.5rem;
+}
+
+.new-task{
+    display: flex;
+    align-items: center;
+}
+
+.new-task input{
+    padding: 0.5rem;
 }
