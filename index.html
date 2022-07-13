@@ -18,7 +18,7 @@
 
     <div id="list-container">
         <div class="new-task">
-            <input v-model="newTask" type="text" placeholder="Inserisci task">
+            <input v-model="newTask" type="text" placeholder="Inserisci task" @keyup.enter="addTask">
             <button v-on:click="addTask">Aggiungi</button>
         </div>
         <ul id="list">
