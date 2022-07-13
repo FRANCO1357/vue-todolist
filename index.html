@@ -23,8 +23,8 @@
         </div>
         <ul id="list">
             <li v-for="(task, i) in tasks"><div>
-                <button v-on:click="deleteTask(i)"><i class="fa-solid fa-xmark"></i></button>{{task.text}}</div>
-                <div class="done"><i v-on:click="unDoneTask(i)" v-if="task.done === true" class="fa-solid fa-check"></i><i v-on:click="doneTask(i)" v-if="task.done === false" class="fa-solid fa-ellipsis"></i></div></li>
+                <button v-on:click="deleteTask(i)"><i class="fa-solid fa-xmark"></i></button><span v-on:click="toogleDone(i)">{{task.text}}</span></div>
+                <div class="done"><i v-on:click="toogleDone(i)" v-if="task.done === true" class="fa-solid fa-check"></i><i v-on:click="toogleDone(i)" v-if="task.done === false" class="fa-solid fa-ellipsis"></i></div></li>
         </ul>
     </div>
 

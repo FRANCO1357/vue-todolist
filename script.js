@@ -20,11 +20,8 @@ const root = new Vue({
             this.tasks.push({text: this.newTask, done: false});
             this.newTask = '';
         },
-        doneTask(i){
-            this.tasks[i].done = true;
+        toogleDone(i){
+            this.tasks[i].done = !this.tasks[i].done;
         },
-        unDoneTask(i){
-            this.tasks[i].done = false;
-        }
     }
 })
